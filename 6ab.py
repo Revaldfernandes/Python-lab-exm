@@ -25,14 +25,7 @@ print("The word", word, "appears", cnt, "times in the file")
 
 
 
-
-
-
-
-
-
-
-
+//////////////////////////////////////////////////
 
 
 
