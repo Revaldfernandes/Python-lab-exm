@@ -15,15 +15,12 @@ else:
     print("Error in input")
 
 
-
+////////////////////////////////////////////
 
 
 
     
-
-
-
-    def bin2Dec(val):
+def bin2Dec(val):
     rev=val[::-1]
     dec = 0
     i = 0
