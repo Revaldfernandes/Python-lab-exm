@@ -16,6 +16,25 @@ with open('output.pdf','wb')as output:
 
 ///////////////////////////
 
+ONLINE DATA
+import requests,json
+api_key="86652d0df.8f0264b715007eb22551976"
+base_url ="http://api.openweathermap.org/data2.5/weather?"
+city_name = input("Enter city name:")
+complete_url = base_url + "appid = "+api_key+"&q="+city_name
+response = requests.get (complete_url)
+x= response.json()
+if x["cod"]!="404":
+    y=x ["main"]
+Current_temperature = y[" temp"]
+       Current_pressure = y[" pressure"]
+       Current_humidity = y[" humidity"]
+        Z= x[" weather"]
+        weather_description = Z[0]["description"]
+        print(" Temperature (in Kelvin unit) = " + str(Current_temperature)+ "\n atmospheric pressure (inhPa unit] ="+str(Current_pressure)+"\n Humidity (in%)="+str(Current_humidity)+"\n description="+str(weather_description))
+    else:
+        print(" City Not Found")
+
 import json
 
 
