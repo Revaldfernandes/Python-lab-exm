@@ -34,7 +34,8 @@ Current_temperature = y[" temp"]
         print(" Temperature (in Kelvin unit) = " + str(Current_temperature)+ "\n atmospheric pressure (inhPa unit] ="+str(Current_pressure)+"\n Humidity (in%)="+str(Current_humidity)+"\n description="+str(weather_description))
     else:
         print(" City Not Found")
-
+        
+=>>>>OFFLINE DATA
 import json
 
 
