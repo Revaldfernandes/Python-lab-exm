@@ -18,7 +18,7 @@ with open('output.pdf','wb')as output:
 
 ONLINE DATA
 import requests,json
-api_key="86652d0df.8f0264b715007eb22551976"
+api_key=""
 base_url ="http://api.openweathermap.org/data2.5/weather?"
 city_name = input("Enter city name:")
 complete_url = base_url + "appid = "+api_key+"&q="+city_name
