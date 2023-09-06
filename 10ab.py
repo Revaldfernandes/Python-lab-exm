@@ -36,6 +36,8 @@ Current_temperature = y[" temp"]
         print(" City Not Found")
         
 =>>>>OFFLINE DATA
+
+
 import json
 
 
